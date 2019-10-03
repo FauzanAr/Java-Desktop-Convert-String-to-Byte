@@ -20,7 +20,9 @@ public class ByteArrayInputStream {
         InputStream input = new java.io.ByteArrayInputStream(dataByte);
         int data = 0;
         while ((data = input.read()) !=-1){
-            System.out.println("Data : "+data);
+            if (data == 5 || data == 1){
+                System.out.println("Data : "+data);
+            }
         }
     }
     
